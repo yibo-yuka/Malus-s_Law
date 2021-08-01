@@ -30,6 +30,10 @@ struc.create_text(150,100,text = 'polarizer',fill = '#ffffff')
 polarizer_position = struc.create_line(150,150,150,350, fill = '#ffff33', width = 4)
 struc.create_text(300,100,text = 'analyzer',fill = '#ffffff')
 analyzer_position = struc.create_line(300,150,300,350, fill = '#ffff33', width = 4)
+struc.create_text(220,270,text = 'Io',fill = '#ffffff')
+
+struc.create_text(380,270,text = 'I = Io*(cos(theta))^2',fill = '#ffffff')
+
 
 if round(I,3) == 0 : #如果兩片偏振片夾角為90度，則光無法通過檢偏器。       
     Io_light = struc.create_line(25,250,148,250, fill = '#ff4433', width = 10)
